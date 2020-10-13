@@ -11,15 +11,15 @@ public class Main {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         do {
-            int randomNumber = random.nextInt(10);
+            int randNumb = random.nextInt(10);
             for (int i = 2; i >= 0; i--) {
                 int userNumber = getNumberFromScanner("Введите число от 0 до 9",0,9);
-                if (userNumber == randomNumber) {
+                if (userNumber == randNumb) {
                     System.out.println("Вы угадали");
                     break;
-                } else if (userNumber > randomNumber) {
+                } else if (userNumber > randNumb) {
                     System.out.println("Загаданное число меньше, осталось попыток: " + i);
-                } else if (userNumber < randomNumber) {
+                } else if (userNumber < randNumb) {
                     System.out.println("Загаданное число больше, осталось попыток: " + i);
                 }
 
