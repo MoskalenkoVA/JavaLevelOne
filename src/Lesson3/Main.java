@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+//        1 Задание
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         do {
@@ -26,30 +27,7 @@ public class Main {
             System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
         } while (scanner.nextInt()==1);
     }
-//        Random random = new Random();
-//        Scanner sc = new Scanner(System.in);
-//        do {
-//            int randomNumber = random.nextInt(10);
-//
-//
-//        for (int i = 1; i < 4; i++) {
-//            int userNumber = getNumberFromScanner("Введите число в пределах от 0 до 9", 0, 9);
-//            if (userNumber==randomNumber) {
-//                System.out.println("Вы угадали = " + userNumber);
-//                break;
-//            } else if (userNumber > randomNumber) {
-//                System.out.println("Указанное число больше, чем загаданное");
-//                System.out.println("Попыток осталось: " + (3 - i));
-//            } else if (userNumber < randomNumber) {
-//                System.out.println("Указанное число меньше, чем загаданное");
-//                System.out.println("Попыток осталось: " + (3 - i));
-//            }
-//
-//        }
-//        System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
-//        } while (sc.nextInt()==1);
-//
-//    }
+
     public static int getNumberFromScanner(String message, int min, int max) {
         int x;
         Scanner sc = new Scanner(System.in);
